@@ -9,7 +9,7 @@ int length(char* s){
   return length;
 }
 
-char* strcpy(char* dest, char* source){
+char* cpy(char* dest, char* source){
   char* original = dest;
   while (*source){
     *dest=*source;
@@ -22,7 +22,7 @@ char* strcpy(char* dest, char* source){
 int main(){
   char new[10]="hi";
   char src[]= "src";
-  strcpy(new,src);
+  cpy(new,src);
   printf("%s\n", new);
   printf("%d \n", length("hello"));
   return 0;
