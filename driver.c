@@ -25,8 +25,8 @@ int main(){
 
 	//testing built-in length function
 	printf("=====BUILT-IN VERSION OF LENGTH=====\n");
-	printf("length of string \"hello\": %d\n", strlen("hello"));
-	printf("length of string \"\": %d\n", strlen(""));
+	printf("length of string \"hello\": %ld\n", strlen("hello"));
+	printf("length of string \"\": %ld\n", strlen(""));
 
 	//testing our compare function
 	printf("\n=====OUR VERSION OF COMPARE=====\n");
@@ -50,5 +50,14 @@ int main(){
 
 	printf("=====BUILT-IN VERSION OF STRCHR=====\n");
 	printf("pointer of char 'e' in \"aaaeaa\": %p\n", strchr("aaaeaa", 'e')); 
+
+
+	printf("dest[20] = \"dest\"\n");
+	char dest[20] = "dest";
+	printf("=====OUR VERSION OF STRNCAT=====\n");
+	printf("dest after strncat(\"dest\",\"src\",3) %s\n", cat(dest,"src",3));
+
+	printf("=====BUILT-IN VERSION OF STRNCAT=====\n");
+	printf("dest after strncat(\"dest\",\"src\",3) %s\n", strncat(dest,"src",3));
 	return 0;
 }

@@ -29,6 +29,16 @@ char* cpy(char* dest, char* source)
 	return original;
 }
 
+char * cat( char *dest, char *source, int n){
+	int len = length(dest);
+	int i;
+	for(i=0; i<n; i++){
+		dest[i+len]=source[i];
+	}
+
+	return dest;
+}
+
 char * chr(char *s, char c)
 {
 	while(*s++)
