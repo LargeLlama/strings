@@ -44,6 +44,11 @@ int main(){
 
 	
 	printf("=====OUR VERSION OF STRCHR=====\n");
-	printf("pointer of char 'e' in \"aaaeaa\": %p\n", chr("aaaeaa", "e")); 
+	printf("pointer of char 'e' in \"aaaeaa\": %p\n", chr("aaaeaa", 'e')); 
+
+
+
+	printf("=====BUILT-IN VERSION OF STRCHR=====\n");
+	printf("pointer of char 'e' in \"aaaeaa\": %p\n", strchr("aaaeaa", 'e')); 
 	return 0;
 }

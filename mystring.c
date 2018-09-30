@@ -31,11 +31,10 @@ char* cpy(char* dest, char* source)
 
 char * chr(char *s, char c)
 {
-	char *p1 = *s;
-	while(*p1++)
+	while(*s++)
 	{
-		if (*p1 == c)
-			return p1;
+		if (*s == c)
+			return s;
 	}
 	return NULL;
 }
