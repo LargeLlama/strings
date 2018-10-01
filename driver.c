@@ -42,22 +42,25 @@ int main(){
 	printf("Comparing \"AAAA\" and \"BBBBBBBBBB\": %d\n", strcmp("AAAA", "BBBBBBBBBB"));
 	printf("Comparing \"\" and \"\": %d\n", strcmp("", ""));
 
-	
-	printf("=====OUR VERSION OF STRCHR=====\n");
+	//tessting our version of strchr	
+	printf("\n=====OUR VERSION OF STRCHR=====\n");
 	printf("pointer of char 'e' in \"aaaeaa\": %p\n", chr("aaaeaa", 'e')); 
+	printf("pointer of char 'a' in \"eeeeee\": %p\n", chr("eeeeee", 'a'));
 
-
-
+	//testing built-in version of strchr
 	printf("=====BUILT-IN VERSION OF STRCHR=====\n");
 	printf("pointer of char 'e' in \"aaaeaa\": %p\n", strchr("aaaeaa", 'e')); 
+	printf("pointer of char 'a' in \"eeeeee\": %p\n", strchr("eeeeee", 'a'));
 
 
-	printf("dest[20] = \"dest\"\n");
+	//declaring the strings to be used in our cat method
 	char dest[20] = "dest";
-	printf("=====OUR VERSION OF STRNCAT=====\n");
+	printf("\n=====OUR VERSION OF STRNCAT=====\n");
 	printf("dest after strncat(\"dest\",\"src\",3) %s\n", cat(dest,"src",3));
 
+	//testing built-in strncat
 	printf("=====BUILT-IN VERSION OF STRNCAT=====\n");
 	printf("dest after strncat(\"dest\",\"src\",3) %s\n", strncat(dest,"src",3));
+
 	return 0;
 }

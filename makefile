@@ -11,4 +11,4 @@ clean:
 	rm *.o
 
 run:
-	./strings
+	./strings.out

@@ -18,8 +18,9 @@ char* cpy(char* dest, char* source)
 	char* original = dest;
 
 	//loop thru source and set each char in dest to the right one in source
-	while (*source){
-		*dest=*source;
+	while (*source)
+	{
+		*dest = *source;
 		source++;
 		dest++;
 	}
@@ -28,6 +29,7 @@ char* cpy(char* dest, char* source)
 	*dest = NULL;
 	return original;
 }
+
 
 char * cat( char *dest, char *source, int n){
 	int len = length(dest);
@@ -41,11 +43,14 @@ char * cat( char *dest, char *source, int n){
 
 char * chr(char *s, char c)
 {
+	//loops thur the string
 	while(*s++)
 	{
+		//if the pointer points to the right char, return the pointer
 		if (*s == c)
 			return s;
 	}
+	//returns null if it's not found
 	return NULL;
 }
 
